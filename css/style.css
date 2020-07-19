@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+    background:  rgba(255, 255, 255,0.5);
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#btn-bag{
+    cursor: pointer;
+}
+
+.bag-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left ,#fdfd96, #B0E0E6, #ff94b2);
+    z-index: 2;
+    visibility: hidden;
+}
+.bag-container.active{
+    visibility: visible;
+}
+.bag-content{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgb(247, 243, 243,0.5);
+    height: 80%;
+    width: 20rem;
+    overflow-y: scroll;
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.bag-item{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.6rem;
+    border-bottom: 0.1rem solid rgb(218, 216, 216);
+}
+
+.bag-item img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.bag-item-details,.quant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#remove-item-bag{
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+    background: #ff94b2;
+}
+.footer-bag{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: rgb(247, 243, 243,0.5);
+    height: 20%;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.total{
+    margin-top: 0.5rem;
+}
+.total span{
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: #ff94ff;
+    padding: 0.3rem 1.3rem;
+}
+
+.comprar-limpar{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#comprar-bag-btn{
+    cursor: pointer;
+    background: #afff94;
+    padding: 0.3rem 1.3rem;
+}
+#limpar-tudo-bag{
+    cursor: pointer;
+    background: #B0E0E6;
+    padding: 0.3rem 1.3rem;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.menu ul li:hover{
+    font-weight: 700;
+}
+.menu.active{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background:  rgba(255, 255, 255,0.5);
+    padding-bottom: 1rem;
+}
+.menu.active ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.menu.active ul li{
+    margin-top: 0.5rem;
+    width: 5rem;
+    padding: 0rem 0rem 0rem 0.3rem;
+}
+.login{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.login span, .login-out span{
+    margin-left: 0.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right ,#fdfd96, #B0E0E6, #ff94b2);
+    padding: 0.2rem;
+    border-radius: 0.2rem;    
+}
+.login.hide {
+    display: none;
+}
+.login-out{
+    display: none;
+}
+.login-out.active{
+    display: block;
+}
+#btn-sing-out{
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.news{
+    width: 100%;
+    background: rgb(231, 231, 231);
+    text-align: center;
+    padding: 0.2rem 0rem;
+    cursor: pointer;
+}
+.slider{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slide img{
+    width: 100%;
+    height: 450px;
+}
+.slide{
+    display: none;
+}
+.slide.active{
+    display:  block;
+}
+
+#btn-menu{
+    display: none;
+}
+#span2{
+    display: none;
+}
+.best-sellers{
+    background: #fdfd96;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.best-sellers h3{
+    margin-top: 2rem;
+}
+.best-sellers-content{
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.best-product{
+    position: relative;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#price-product{
+    margin-top: 0.3rem;
+    font-weight: 600;
+}
+.loja-cart{
+    position: absolute;
+    right: 0;
+    bottom: 30%;
+    padding: 0.7rem;
+    background: white;
+    border-bottom-left-radius: 1rem;
+    /* transition: all 0.8s ease-in-out;
+    transform: translate(100%); */
+    cursor: pointer;
+}
+/* .best-product:hover .loja-cart{
+    transform: translate(0);
+} */
+@media (max-width: 800px){
+    .menu{
+        display: none;
+    }
+    header h2{
+        font-size: 1.1rem;
+    }
+    #btn-menu{
+        display: block;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+    
+}
+@media (max-width: 500px){
+    header h2{
+        font-size: 1rem;
+    }
+    #span1{
+        display: none;
+    }
+    #span2{
+        display:block;
+    }
+}

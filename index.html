@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/21875b1641.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-ellipsis-h fa-2x" id="btn-menu"></i>
+            <h2>WSHOP</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>blusa</li>
+                <li>vestido</li>
+                <li>saia</li>
+                <li>jeans</li>
+                <li>sapatos</li>
+            </ul>
+        </div>
+        <div class="login">
+            <i class="fas fa-cubes fa-lg"></i>
+            <span id="span1">faça seu login!</span>
+            <span id="span2">login!</span>
+        </div>
+        <div class="login-out">
+            <span></span><i class="fas fa-sign-out-alt" id="btn-sing-out"></i>
+        </div>
+        <div class="bag">
+            <i class="fas fa-shopping-bag fa-lg" id="btn-bag"></i>
+            <span id="count-bag"></span>
+        </div>
+    </header>
+    <div class="bag-container">
+        <div class="bag-content"></div>
+        <bag class="footer-bag">
+            <div class="total">
+                <span id="total-bag-value"></span>
+            </div>
+            <div class="comprar-limpar">
+                <span id="comprar-bag-btn">comprar</span>
+                <span id="limpar-tudo-bag">limpar</span>
+            </div>
+        </bag>
+    </div>
+    <div class="news">
+        <span>se liga nas novidades!</span>
+    </div>
+    <div class="slider">
+        <div class="slide">
+            <img src="img/smiling-woman-looking-upright-standing-against-yellow-wall-1536619.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/adolescent-casual-cute-elegant-428338.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/woman-in-blue-and-white-striped-top-raising-her-left-hand-1462637.jpg" alt="">
+        </div>
+    </div>
+    <div class="best-sellers">
+        <h3 id="best-sellers-title">mais vendidos do mês!</h3>
+
+        <div class="best-sellers-content">
+            <div class="best-product">
+                <img src="img/best/pair-of-beige-leather-open-toe-heeled-platform-shoes-on-1445696.jpg" alt="">
+                <span class="loja-cart"> <i class="fas fa-shopping-bag fa-lg"></i></i></span>
+                <div class="product-details">
+                    <span id="name-product">Sapato fino</span>
+                    <span id="price-product">$90.00</span>
+                </div>
+            </div>
+            <div class="best-product">
+                <img src="img/best/photo-of-a-woman-wearing-green-dress-985635.jpg" alt="">
+                <span class="loja-cart"> <i class="fas fa-shopping-bag fa-lg"></i></i></span>
+                <div class="product-details">
+                    <span id="name-product">Vestido Perfeito</span>
+                    <span id="price-product">$65.90</span>
+                </div>
+            </div>
+            <div class="best-product">
+                <img src="img/best/photo-of-pair-of-vans-sneakers-1598508.jpg" alt="">
+                <span class="loja-cart"> <i class="fas fa-shopping-bag fa-lg"></i></i></span>
+                <div class="product-details">
+                    <span id="name-product">Sapato Flex</span>
+                    <span id="price-product">$15.90</span>
+                </div>
+            </div>
+            <div class="best-product">
+                <img src="img/best/woman-in-pink-dress-902030.jpg" alt="">
+                <span class="loja-cart"> <i class="fas fa-shopping-bag fa-lg"></i></i></span>
+                <div class="product-details">
+                    <span id="name-product">Vestido Veludo</span>
+                    <span id="price-product">$25.89</span>
+                </div>
+            </div>
+            <div class="best-product">
+                <img src="img/best/woman-wearing-black-suede-stilettos-2044228.jpg" alt="">
+                <span class="loja-cart"> <i class="fas fa-shopping-bag fa-lg"></i></i></span>
+                <div class="product-details">
+                    <span id="name-product">Vestido Veludo</span>
+                    <span id="price-product">$25.89</span>
+                </div>
+            </div>
+            <div class="best-product">
+                <img src="img/best/woman-wearing-white-and-yellow-scoop-neck-mini-dress-884979.jpg" alt="">
+                <span class="loja-cart"> <i class="fas fa-shopping-bag fa-lg"></i></i></span>
+                <div class="product-details">
+                    <span id="name-product">Vestido Veludo</span>
+                    <span id="price-product">$25.89</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

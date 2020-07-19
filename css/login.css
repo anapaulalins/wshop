@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right ,#fdfd96, #B0E0E6, #ff94b2);
+}
+.login-content{
+    padding: 3rem;
+    background: white;
+    border-radius: 1rem;
+}
+.login-content h2{
+    letter-spacing: 0.2rem;
+}
+.get-login{
+    margin-top: 1.3rem;   
+}
+.login-user-email, .login-user-password{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 0.5rem 0rem;
+    width: 13rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid rgb(56, 56, 56);
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+}
+button{
+    padding: 0.2rem 0.8rem;
+    cursor: pointer;
+    background:#111111;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none; 
+}
+#btn-cadastro{
+    cursor: pointer;
+}
